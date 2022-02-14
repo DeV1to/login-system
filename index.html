@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style/css.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class = "login-box">
+            <h2>Вход</h2>
+            <form>
+                <div class = "user-box">
+                    <input type="text" name="mail" required="true">
+                    <label>E-mail</label>
+                </div>
+                <div class = "user-box">
+                    <input type="password" id="password__input" name="password" required="true">
+                    <label>Пароль</label>
+                    <img class ="password-btn" src="eye2.png" onclick="return show_hide_password(this);">
+                </div>
+                <button  href="#" type="submit" class = "btn">
+                    Войти
+                </button>
+            </form>
+        </div>
+        <div class = "register-box">
+            <h2>Регистрация</h2>
+            <form>
+                <div class = "user-box">
+                    <input type="text" name="full-name" required="true">
+                    <label>ФИО</label>
+                </div>
+                <div class = "user-box">
+                    <input type="text" name="email" required="true">
+                    <label>E-mail</label>
+                </div>
+                <div class = "user-box">
+                    <input type="text" name="password" required="true">
+                    <label>Пароль</label>
+                </div>
+                <div class = "user-box">
+                    <input type="text" name="password-reenter" required="true">
+                    <label>Повторите пароль</label>
+                </div>
+                <button  href="#" type="submit" class = "btn">
+                    Зарегестрироваться
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="./scrpt.js"></script>
+</body>
+</html>
